@@ -11,7 +11,7 @@
     <url>https://aws.amazon.com/kinesis</url>
 
     <scm>
-        <url>https://github.com/awslabs/amazon-kinesis-connectors.git</url>
+        <url>https://github.com/em-schmidt/amazon-kinesis-connectors.git</url>
     </scm>
 
     <licenses>
@@ -21,6 +21,25 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>moven-artifacts</id>
+            <url>s3://moven-artifacts/maven/snapshot</url>
+        </snapshotRepository>
+        <repository>
+          <id>moven-artifacts</id>
+          <url>s3://moven-artifacts/maven/release</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+          <id>moven-artifacts</id>
+          <url>s3://moven-artifacts/maven/release</url>
+        </repository>
+    </repositories>
+
 
     <properties>
         <amazon-kinesis-client.version>1.7.2</amazon-kinesis-client.version>
@@ -119,6 +138,13 @@
     </developers>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>1.2.1</version>
+            </extension>
+        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
