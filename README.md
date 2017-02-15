@@ -1,6 +1,6 @@
 # Reminder for Future Eric: 
 
-    This is patched to add support for elasticsearch 2.0+  If you need to build this thing, clone the repo and run mvn install... you can then run the build of the cloudwatch logs agent
+    This is patched to add support for elasticsearch 2.0+  If you need to build this thing, clone the repo and run mvn deploy.  You'll need to set the enviornment variabiles AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 
 # Amazon Kinesis Connector Library
 
