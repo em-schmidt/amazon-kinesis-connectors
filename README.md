@@ -1,3 +1,7 @@
+# Reminder for Future Eric: 
+
+    This is patched to add support for elasticsearch 2.0+  If you need to build this thing, clone the repo and run mvn install... you can then run the build of the cloudwatch logs agent
+
 # Amazon Kinesis Connector Library
 
 The **Amazon Kinesis Connector Library** helps Java developers integrate [Amazon Kinesis][aws-kinesis] with other AWS and non-AWS services. The current version of the library provides connectors for [Amazon DynamoDB][aws-dynamodb], [Amazon Redshift][aws-redshift], [Amazon S3][aws-s3], [Elasticsearch][Elasticsearch]. The library also includes [sample connectors](#samples) of each type, plus Apache Ant build files for running the samples.

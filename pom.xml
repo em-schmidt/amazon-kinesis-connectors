@@ -25,8 +25,8 @@
     <properties>
         <amazon-kinesis-client.version>1.4.0</amazon-kinesis-client.version>
         <aws-java-sdk.version>1.9.37</aws-java-sdk.version>
-        <elasticsearch.version>1.2.1</elasticsearch.version>
-        <fasterxml-jackson.version>2.3.2</fasterxml-jackson.version>
+        <elasticsearch.version>2.0.0</elasticsearch.version>
+        <fasterxml-jackson.version>2.6.4</fasterxml-jackson.version>
     </properties>
 
     <dependencies>
@@ -122,4 +122,3 @@
     </build>
 
 </project>
-
